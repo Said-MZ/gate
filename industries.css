@@ -1,0 +1,96 @@
+main {
+  padding-top: 8rem;
+  background-image: url(/img/wavesvertical.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.industries h1 {
+  color: whitesmoke;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.card-container {
+  transition: all 500ms;
+  box-shadow: 0px 3px 10px #191919aa;
+  border: 2px solid #191919;
+  border-radius: 3rem;
+  background: linear-gradient(0deg, #202020, #404040);
+  color: whitesmoke;
+  filter: grayscale(25%);
+}
+
+.card-container:hover {
+  border-radius: 1rem;
+  transform: scale(1.06);
+  filter: grayscale(0%) brightness(110%);
+  box-shadow: 0px 0px 5rem var(--light-blue-color);
+}
+
+.card-container:hover img {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.card-container img {
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3rem;
+  background-color: var(--light-blue-color);
+  border-bottom: 2px solid #191919;
+  margin: auto;
+  width: 100%;
+  height: 60%;
+  transition: all 500ms;
+}
+
+.card-container > div {
+  height: 50%;
+}
+
+.card-container h2 {
+  font-size: 1.75rem;
+  padding: 1rem;
+}
+
+.description {
+  font-size: 1.25rem;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .industries h1 {
+    font-size: 2.5rem;
+  }
+
+  .cards {
+    padding: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-container img {
+    height: 50%;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+  #logistics .description {
+    margin-bottom: 6rem;
+  }
+  #tourism .description {
+    margin-bottom: 6rem;
+  }
+}

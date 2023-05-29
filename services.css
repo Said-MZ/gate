@@ -1,0 +1,109 @@
+body {
+  overflow-x: hidden;
+}
+
+.hero {
+  padding-top: 12rem;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 900/600;
+  width: 100%;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.first-service {
+  background-image: url(/img/waves-services.svg);
+}
+
+.second-service {
+  padding-top: 7rem;
+  background-image: url(/img/waves-white.svg);
+}
+
+.third-service {
+  padding-top: 7rem;
+  background-image: url(/img/waves-services.svg);
+}
+
+.service {
+  border-bottom: 5px solid black;
+}
+
+.hero p {
+  margin: 2rem 6rem;
+  text-align: justify;
+  font-size: 1.25rem;
+}
+
+.hero h2 {
+  font-size: 5rem;
+}
+
+.bg-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: transparent;
+  text-overflow: no;
+  -webkit-text-stroke: 1px rgba(245, 245, 245, 0.25);
+  position: absolute;
+  font-size: 5.7rem !important;
+  left: 26%;
+  transform: translate(-50%, -200%);
+  transform: scale(1.75);
+}
+
+.background-text {
+  top: 23.5%;
+}
+.background-text2 {
+  top: 73%;
+}
+.background-text3 {
+  left: 21%;
+  top: 132%;
+}
+.background-text4 {
+  left: 21%;
+  top: 192%;
+}
+
+.hero p {
+  color: rgb(215, 215, 215);
+}
+
+@media (max-width: 320px) {
+  .hero {
+    padding-top: 3rem;
+    height: 100vh;
+  }
+  .hero h2 {
+    font-size: 1.5rem !important;
+  }
+  .hero p {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 5rem;
+    height: 80vh;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .hero p {
+    padding: 0rem;
+    margin: 1.5rem;
+    font-size: 1.25rem;
+  }
+  .background-text,
+  .background-text2,
+  .background-text3,
+  .background-text4 {
+    display: none;
+  }
+}

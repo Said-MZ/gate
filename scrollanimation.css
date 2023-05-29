@@ -1,0 +1,58 @@
+.hidden {
+  opacity: 0;
+  transition: all 500ms !important;
+  filter: blur(2.5px);
+}
+
+.fromRight {
+  transform: translateX(250px);
+}
+
+.fromLeft {
+  transform: translateX(-250px);
+}
+
+.toTop {
+  transform: translateY(100px);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+  transform: translateY(0);
+  transition-delay: 50ms;
+}
+
+.delay {
+  transition-delay: 100ms !important;
+}
+
+.delay2 {
+  transition-delay: 250ms !important;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .fromRight {
+    transform: translateY(100px);
+  }
+
+  .fromLeft {
+    transform: translateY(100px);
+  }
+
+  .show {
+    transform: translateY(0);
+  }
+}
